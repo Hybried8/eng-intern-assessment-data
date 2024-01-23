@@ -1,5 +1,4 @@
 import unittest
-import psycopg2  # Replace with appropriate database connector based on your database
 
 class TestSQLQueries(unittest.TestCase):
 
