@@ -107,7 +107,7 @@ class TestSQLQueries(unittest.TestCase):
             # Define expected rows or values here based on the query output
         ]
 
-        self.assertEqual(result, expected_result, "Task 2: Query output doesn't match expected result.")
+        self.assertEqual(result, expected_result, "Task 6: Query output doesn't match expected result.")
 
     def test_task7(self):
         # Task 7: Example SQL query in task7.sql
@@ -125,7 +125,7 @@ class TestSQLQueries(unittest.TestCase):
         self.assertEqual(result, expected_result, "Task 7: Query output doesn't match expected result.")
 
     def test_task8(self):
-        # Task 8: Example SQL query in task2.sql
+        # Task 8: Example SQL query in task8.sql
         with open('/sql/task8.sql', 'r') as file:
             sql_query = file.read()
 
