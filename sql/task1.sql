@@ -3,7 +3,7 @@
 SELECT Products.product_id, Products.product_name, Products.description, Products.price
 FROM Products
 JOIN Categories ON Products.category_id = Categories.category_id
-WHERE Categories.category_name = 'Sports';
+WHERE Categories.category_name = 'Music';
 --for Problem1, I just picked a random category and to answer the question with. I picked sports
 
 -- Problem 2: Retrieve the total number of orders for each user
