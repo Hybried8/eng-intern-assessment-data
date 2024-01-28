@@ -18,9 +18,9 @@ class TestSQLQueries(unittest.TestCase):
         with open(path, 'r') as file:
             sql_query = file.read()
         
-        # Split multiple queries if present and execute the specified one
-        sql_query = sql_query.split(';')[query_number-1]
-        self.cur.execute(sql_query)
+        queries = sql_query.strip().split(';')
+        selected_query = queries[query_number - 1].strip()
+        self.cur.execute(selected_query)
         
         # Retrieve results and compare with expected result
         result = self.cur.fetchall()
