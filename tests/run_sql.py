@@ -2,7 +2,7 @@ import sqlite3
 
 def run_sql_script(sql_file):
     # Connect to SQLite database
-    conn = sqlite3.connect('mod_shopify_data.db')
+    conn = sqlite3.connect('shopify.db')
     cursor = conn.cursor()
 
     try:
